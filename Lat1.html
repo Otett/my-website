@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend of Kingdoms</title>
+    <style>
+        /* Mengatur font dan dasar tampilan */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover; /* Gambar menyesuaikan layar */
+            background-position: center; /* Gambar berada di tengah */
+            background-repeat: no-repeat; /* Gambar tidak diulang */
+            height: 100vh; /* Tinggi penuh layar */
+            transition: background-image 1s ease-in-out; /* Transisi halus */
+            color: #ef0000;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Navigasi */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* Bagian Konten */
+        section {
+            display: none;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #ff0000;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section p {
+            font-size: 1.1em;
+            color: #0400ff;
+            line-height: 1.6;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Guide Links */
+        .guide-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .guide-list a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #3498db;
+            margin: 10px 0;
+            display: block;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .guide-list a:hover {
+            color: #2980b9;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Kontak Form */
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Legend of Kingdoms</h1>
+        <nav>
+            <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+            <a href="javascript:void(0);" onclick="showSection('guide')">Guide</a>
+            <a href="javascript:void(0);" onclick="showSection('code')">Code</a>
+            <a href="javascript:void(0);" onclick="showSection('forum')">Forum</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Legend of Kingdoms Guide and Code</h2>
+        <p>We are here to provide the best experience in gaming, with a variety of guides, tips, and up-to-date information to help you maximize your gameplay. Whether you're a beginner just starting your adventure or an experienced player looking for advanced strategies, here you'll find everything you need!</p>
+    </section>
+
+    <!-- Guide Section -->
+    <section id="guide">
+        <h2>Game Guide</h2>
+        <p>Welcome to the game guide section! Click on the links below to explore different guides and strategies.</p>
+        
+        <!-- List of Guides (Sub-guides) -->
+        <ul class="guide-list">
+            <li><a href="guide_1.html" target="_blank">Lineup Hero</a></li>
+            <li><a href="guide_2.html" target="_blank">Advanced Combat Tactics</a></li>
+            <li><a href="guide_3.html" target="_blank">Resource Management Tips</a></li>
+            <li><a href="guide_4.html" target="_blank">Hero Tierlist</a></li>
+        </ul>
+    </section>
+
+    <!-- Code Section -->
+    <section id="code">
+        <h2>Game Redeem Code</h2>
+        <p>Check out the latest redeem code to get special rewards in the game!</p>
+
+        <!-- Informasi Redeem Code Terbaru -->
+        <div class="contact-form">
+            <h3>Redeem Code</h3>
+            <p><strong>VIP666</strong> - Use this code for exclusive in-game rewards!</p>
+            <p><strong>VIP888</strong> - Use this code for exclusive in-game rewards!</p>
+            <p><strong>VIP999</strong> - Use this code for exclusive in-game rewards!</p>
+            <h3>Time-limited code</h3>
+            <p><strong>LOKFORDC</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>Niceweather</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>Bluesky</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>24Halloween</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>ColorEgg</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>Double11</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>5kDCmembers</strong> - Use this redeem code before it's too late and get your reward!</p>
+            <p><strong>Warmcoat</strong> - Use this redeem code before it's too late and get your reward!</p>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum">
+        <h2>Discussion forum</h2>
+        <p>Share your ideas, suggestions, or questions here. We look forward to hearing your feedback!</p>
+        
+        <!-- Formulir untuk mengirim pesan ke forum -->
+        <div class="contact-form">
+            <form id="forum-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Nickname" required>
+                <textarea name="message" placeholder="Write your message or question...." rows="5" required></textarea>
+                <button type="submit">Send Message to the Forum</button>
+            </form>
+        </div>
+
+        <!-- Daftar Pesan yang Sudah Dikirim -->
+        <div id="forum-posts">
+            <h3>Latest messages:</h3>
+            <ul id="post-list">
+                <!-- Pesan forum akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tombol untuk mengganti latar belakang gambar -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="changeBackgroundImage()">Change Background Image</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Guide & Redeem Code</p>
+    </footer>
+
+    <!-- JavaScript untuk mengontrol tampilan konten, forum, dan latar belakang -->
+    <script>
+        // Fungsi untuk menampilkan section yang dipilih
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Sembunyikan semua section
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Tampilkan section yang dipilih
+        }
+
+        // Fungsi untuk mengganti latar belakang gambar
+        function changeBackgroundImage() {
+            const images = [
+                'url("https://i.imgur.com/mzCboWh.jpeg")',
+                'url("https://i.imgur.com/mzCboWh.jpeg")',
+                'url("https://i.imgur.com/mzCboWh.jpeg")'
+            ];
+            let currentIndex = 0;
+            // Function to update the background
+            function updateBackground() {
+                document.body.style.backgroundImage = images[currentIndex];
+                currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+            }
+
+            // Initial call to set the first background
+            updateBackground();
+
+            // Change background every 5 seconds (5000ms)
+            setInterval(updateBackground, 5000);
+        }
+
+        // Call the function when the page loads
+        window.onload = changeBackgroundImage;
+    </script>
+</body>
+</html>
